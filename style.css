@@ -8,9 +8,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  /*
   outline: 1px solid purple;
-  */
 }
 
 body {
@@ -54,7 +52,7 @@ ul {
   font-weight: normal;
 }
 
-/* hero */
+/* Hero section */
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -92,4 +90,75 @@ button {
   height: 320px;
   background-color: aliceblue;
   flex-shrink: 1;
+}
+
+/* Information section */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 160px 80px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  background-color: navy;
+  border: 2px solid #3882f6;
+  border-radius: 12px;
+}
+
+.card p {
+  font-size: 18px;
+  color: hsl(215, 38%, 8%);
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Testimonial section */
+.testimonial {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 80px 160px 80px;
+  gap: 20px;
+}
+
+.quote {
+  width: 800px;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+}
+
+.subject {
+  width: 800px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #1f2937;
+  text-align: right;
 }
